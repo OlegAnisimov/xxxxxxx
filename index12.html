@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700" />
+
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+
+    <meta name="x-apple-disable-message-reformatting" />
+
+    <style>
+      .spacevm-landing-page-layout {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        min-width: 1440px;
+        padding-top: 16px;
+        padding-bottom: 129px;
+      }
+      .vertical-centered-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .main-content-container {
+        box-sizing: border-box;
+        min-width: 1201px;
+      }
+      .flex-row-with-spacing {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .contact-info-section2 {
+        box-sizing: border-box;
+        display: block;
+        width: 99px;
+        max-width: initial;
+        height: 40px;
+      }
+      .contact-info-section {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 23px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .contact-info-section1 {
+        box-sizing: border-box;
+        display: block;
+        width: 75px;
+        max-width: initial;
+        height: 24px;
+      }
+      .contact-info-card {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 16px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.48px;
+      }
+      .flex-column-with-spacing {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 16px;
+      }
+      .hierarchical-text-block {
+        flex: 0 0 auto;
+        padding-bottom: 7.25px;
+      }
+      .vertical-center-box {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: 42px;
+        padding-right: 46px;
+        border-top: 1px solid #f1f0f2;
+      }
+      .heading-link {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 600 16px Manrope, sans-serif;
+        color: #10041b;
+        letter-spacing: -0.48px;
+      }
+      .partner-section-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: 42px;
+        padding-right: 45px;
+        border-top: 1px solid #f1f0f2;
+      }
+      .support-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: 42px;
+        padding-right: 35px;
+        border-top: 1px solid #f1f0f2;
+      }
+      .card-with-title {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        min-width: 122px;
+        padding-bottom: 7.25px;
+      }
+      .vertical-center-box1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 100%;
+        height: 42px;
+        border-top: 1px solid #f1f0f2;
+      }
+      .training-card {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        min-width: 122px;
+      }
+      .purple-heading1 {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 600 16px Manrope, sans-serif;
+        color: #b293df;
+        letter-spacing: -0.48px;
+      }
+      .learning-section {
+        padding-right: 52px;
+        padding-left: 52px;
+        margin-top: -23px;
+      }
+      .image-container-styles {
+        box-sizing: border-box;
+        display: block;
+        width: 28.5px;
+        max-width: initial;
+        height: 30.5px;
+        border: none;
+        object-fit: cover;
+      }
+      .career-section-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: 42px;
+        padding-right: 57px;
+        border-top: 1px solid #f1f0f2;
+      }
+      .eco-virtual-space-hierarchy {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 200px;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-top: 49px;
+      }
+      .futuristic-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: flex-start;
+        align-self: center;
+        justify-content: space-between;
+        min-width: 1200px;
+        padding: 40px 40px 40px 39px;
+        background: linear-gradient(218.74deg, rgba(255, 255, 255, 0.16) 44.52%, rgba(159, 55, 226, 0.16) 164.44%);
+        border-radius: 32px;
+        backdrop-filter: blur(41px);
+      }
+      .virtualization-ecosystem-container {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 622px;
+      }
+      .virtualization-ecosystem-style {
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .eco-virtual-space-heading {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font: 500 56px/58px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+        letter-spacing: -1.68px;
+      }
+      .vibrant-heading {
+        font: 500 56px/58px Manrope, sans-serif;
+        color: #946ad2;
+        text-align: left;
+        letter-spacing: -1.68px;
+      }
+      .cloud-tech-description-style {
+        box-sizing: border-box;
+        max-width: 341px;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        font: 400 16px/22px Manrope, sans-serif;
+        color: #665f6d;
+        text-align: left;
+        letter-spacing: -0.48px;
+      }
+      .purple-button {
+        box-sizing: border-box;
+        display: block;
+        width: 172px;
+        min-width: 172px;
+        height: 56px;
+        margin-top: 32px;
+        font: 600 16px Manrope, sans-serif;
+        color: white;
+        letter-spacing: -0.48px;
+        cursor: pointer;
+        background: #946ad2;
+        border: none;
+        border-radius: 100px;
+      }
+      .virtualization-platform-list {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin-top: 71px;
+      }
+      .hierarchical-text-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+      }
+      .image-with-text-overlay {
+        box-sizing: border-box;
+        display: block;
+        width: 53px;
+        max-width: initial;
+        height: 56px;
+        border: none;
+        mix-blend-mode: darken;
+        object-fit: cover;
+      }
+      .virtualization-platforms-listing {
+        flex: 0 0 auto;
+        padding: 0;
+        padding-top: 20px;
+        margin: 0;
+        margin-left: 7px;
+        font: 400 12px/18px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+      }
+      .purple-heading {
+        font: 600 12px/18px Manrope, sans-serif;
+        color: #946ad2;
+        text-align: left;
+      }
+      .vertical-divider {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 1px;
+        height: 32px;
+        background: #d9d7da;
+      }
+      .immersive-image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 441px;
+        max-width: initial;
+        height: 413px;
+        border: none;
+        border-radius: 24px;
+        object-fit: cover;
+      }
+      .enterprise-solutions-container {
+        box-sizing: border-box;
+        min-width: 1202px;
+      }
+      .enterprise-solutions-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .enterprise-solution-heading {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 298px;
+        padding: 0;
+        padding-top: 7px;
+        margin: 0;
+        font: 600 16px/22px Manrope, sans-serif;
+        color: #665f6d;
+        text-align: left;
+        letter-spacing: -0.48px;
+      }
+      .enterprise-solution-heading1 {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 790px;
+        padding: 0;
+        margin: 0;
+        font: 500 48px/50px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+        letter-spacing: -1.44px;
+      }
+      .enterprise-solutions-section1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 72px;
+      }
+      .blue-box-container {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 379px;
+        background: #41b4bf;
+        border-radius: 16px;
+      }
+      .virtual-infra-management-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 100%;
+        padding: 32px 31px;
+        background: url("assets/image_ea572c1.png") 50% / cover no-repeat;
+      }
+      .virtual-infrastructure-heading-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 24px/26px Manrope, sans-serif;
+        color: white;
+        text-align: left;
+        letter-spacing: -0.72px;
+      }
+      .virtual-infrastructure-title {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 66px;
+        font: 500 40px/42px Manrope, sans-serif;
+        color: white;
+        letter-spacing: -1.2px;
+      }
+      .virtual-desktop-infrastructure-style {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        min-width: 379px;
+        background: #946ad2;
+        border-radius: 16px;
+      }
+      .virtual-desktop-infra-visual {
+        box-sizing: border-box;
+        width: 190px;
+        height: 125px;
+        background: radial-gradient(50% 50% at 50% 50%, #946ad2 0%, #946ad2 92.14%, #a681dd 100%);
+        border-radius: 50%;
+      }
+      .virtual-desktop-infrastructure-style1 {
+        padding-right: 31px;
+        padding-left: 31px;
+        margin-top: -93px;
+      }
+      .virtual-desktop-infrastructure-heading {
+        box-sizing: border-box;
+        max-width: 313px;
+        padding: 0;
+        margin: 0;
+        font: 500 24px/26px Manrope, sans-serif;
+        color: white;
+        text-align: left;
+        letter-spacing: -0.72px;
+      }
+      .virtual-desktop-info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 31px;
+        padding-left: 31px;
+      }
+      .space-vdi-title-style {
+        flex: 0 0 auto;
+        padding: 0;
+        padding-top: 51px;
+        margin: 0;
+        font: 500 40px/42px Manrope, sans-serif;
+        color: white;
+        letter-spacing: -1.2px;
+      }
+      .space-vdi-badge {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 189px;
+        height: 125px;
+        margin-left: -17px;
+        background: radial-gradient(50% 50% at 50% 50%, #946ad2 0%, #946ad2 92.14%, #a681dd 100%);
+        border-radius: 50%;
+      }
+      .orange-box-style {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 379px;
+        background: #ff8c53;
+        border-radius: 16px;
+      }
+      .vertical-center-text-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 100%;
+        padding: 32px 31px;
+        background: url("assets/image_16cc682.png") 50% / cover no-repeat;
+      }
+      .main-content-container1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-top: 40px;
+      }
+      .standout-heading {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font: 500 48px/50px Manrope, sans-serif;
+        color: #10041b;
+        text-align: center;
+        letter-spacing: -1.44px;
+      }
+      .central-flex-column-hierarchy {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        margin-top: 56px;
+      }
+      .hierarchical-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .proprietary-styling {
+        box-sizing: border-box;
+        flex: 1 1 0;
+        background: #f7f7f8;
+        border-radius: 24px;
+      }
+      .unique-heading-style {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font: 500 40px/42px Manrope, sans-serif;
+        color: #10041b;
+        letter-spacing: -1.2px;
+        background: #ebecf0;
+      }
+      .proprietary-content-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .proprietary-product-info-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 39px;
+      }
+      .proprietary-text-styling {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 375px;
+        padding: 0;
+        padding-top: 38px;
+        margin: 0;
+        font: 400 16px/22px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+        letter-spacing: -0.48px;
+      }
+      .unique-content-image {
+        box-sizing: border-box;
+        display: block;
+        width: 46px;
+        max-width: initial;
+        height: 242px;
+        clip-path: path("M0,61.8635l144.964,-61.8635l5.54,40.6268l-107.1072,60.0172l-4.6167,26.776l-5.54,96.951l-29.54675,17.543z");
+        object-fit: cover;
+      }
+      .proprietary-content-block1 {
+        flex: 0 0 auto;
+        align-self: flex-end;
+        margin-top: -187px;
+      }
+      .darkened-image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 296px;
+        max-width: initial;
+        height: 246px;
+        border: none;
+        mix-blend-mode: darken;
+        object-fit: cover;
+      }
+      .proprietary-content-block {
+        flex: 0 0 auto;
+        margin-top: -228px;
+      }
+      .image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 400px;
+        max-width: initial;
+        height: 228px;
+      }
+      .seamless-ecosystem-container {
+        box-sizing: border-box;
+        flex: 1 1 0;
+        margin-left: 16px;
+        background: #f7f7f8;
+        border-radius: 24px;
+      }
+      .seamless-eco-system-container {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 40px 39px 219px;
+        background: url("assets/image_22356dab.png") 50% / cover no-repeat;
+      }
+      .eco-system-title {
+        padding: 0;
+        margin: 0;
+        font: 500 40px/42px Manrope, sans-serif;
+        color: #10041b;
+        letter-spacing: -1.2px;
+      }
+      .seamless-eco-system-text-style {
+        box-sizing: border-box;
+        max-width: 379px;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        font: 400 16px/22px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+        letter-spacing: -0.48px;
+      }
+      .flex-container-with-customization {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 16px;
+      }
+      .national-security-product-card {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 592px;
+        background: #f7f7f8;
+        border-radius: 24px;
+      }
+      .national-security-banner {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        height: 43px;
+        background: linear-gradient(90deg, rgba(247, 247, 248, 1) 0%, rgba(247, 247, 248, 1) 39.5%, rgba(242, 243, 248, 1) 79.5%, rgba(241, 243, 248, 1) 100%);
+      }
+      .national-security-products {
+        flex: 0 0 auto;
+        margin-top: -3px;
+      }
+      .virtualization-container {
+        padding-right: 39px;
+        padding-left: 39px;
+      }
+      .virtualization-heading {
+        box-sizing: border-box;
+        max-width: 529px;
+        padding: 0;
+        margin: 0;
+        font: 500 40px/42px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+        letter-spacing: -1.2px;
+      }
+      .product-info-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-right: 39px;
+        padding-left: 39px;
+        margin-top: -81px;
+      }
+      .space-product-description-text-style {
+        flex: 0 0 auto;
+        align-self: flex-start;
+        padding: 0;
+        padding-top: 97px;
+        margin: 0;
+        font: 400 16px/22px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+        letter-spacing: -0.48px;
+      }
+      .space-product-image-styles {
+        box-sizing: border-box;
+        display: block;
+        width: 367px;
+        max-width: initial;
+        height: 318px;
+        margin-left: -109px;
+        border: none;
+        mix-blend-mode: darken;
+        object-fit: cover;
+      }
+      .customizer-container {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        margin-left: 16px;
+        background: #f7f7f8;
+        border-radius: 24px;
+      }
+      .header-background-section {
+        box-sizing: border-box;
+        width: 100%;
+        height: 45px;
+        background: #eff2f9;
+      }
+      .customizer-section {
+        margin-top: -5px;
+      }
+      .custom-heading-style {
+        padding: 0;
+        padding-right: 39px;
+        padding-left: 39px;
+        margin: 0;
+        font: 500 40px/42px Manrope, sans-serif;
+        color: #10041b;
+        letter-spacing: -1.2px;
+      }
+      .customer-engagement-roadmap {
+        box-sizing: border-box;
+        margin-top: -37px;
+      }
+      .customer-interaction-text {
+        box-sizing: border-box;
+        max-width: 530px;
+        padding: 0;
+        margin: 0;
+        font: 400 16px/22px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+        letter-spacing: -0.48px;
+      }
+      .customer-engagement-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: -97px;
+      }
+      .card-thumbnail-container {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 108px;
+        height: 316px;
+        background: #f2f5fc;
+      }
+      .image-container2 {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 484px;
+        background: url("assets/image_28555523.jpeg") 50% / cover no-repeat;
+        border: none;
+      }
+      .cover-image-display-style {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        max-width: initial;
+        height: 316px;
+        border: none;
+        object-fit: cover;
+      }
+      .space-agency-layout {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-top: -1px;
+      }
+      .scientific-research-center-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+      .scientific-text-block {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        align-self: center;
+        max-width: 791px;
+        padding: 0;
+        margin: 0;
+        font: 500 32px/34px Manrope, sans-serif;
+        color: #10041b;
+        text-align: center;
+        letter-spacing: -0.96px;
+      }
+      .purple-heading-style {
+        font: 500 32px/34px Manrope, sans-serif;
+        color: #946ad2;
+        text-align: center;
+        letter-spacing: -0.96px;
+      }
+      .scientific-team-section {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: -303px;
+      }
+      .hero-section-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 73.33%;
+        padding-top: 359px;
+        padding-bottom: 56px;
+      }
+      .card-container {
+        box-sizing: border-box;
+        flex: 1 0 auto;
+        background: #f7f7f8;
+        border-radius: 24px;
+      }
+      .vertical-center-align-with-padding {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        padding: 150px 26px;
+        background: url("assets/image_b7e5e12.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .svg-container {
+        display: flex;
+        flex: 0 0 auto;
+        width: 24px;
+        height: 24px;
+      }
+      .image-container-with-border-radius {
+        box-sizing: border-box;
+        display: block;
+        width: 584px;
+        max-width: initial;
+        height: 388px;
+        margin-left: 32px;
+        border: none;
+        border-radius: 24px;
+        object-fit: cover;
+      }
+      .vertical-align-bottom-flex-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        width: 26.67%;
+      }
+      .image-container1 {
+        box-sizing: border-box;
+        display: block;
+        width: 369px;
+        max-width: initial;
+        height: 803px;
+      }
+      .flex-container-with-buttons {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-top: -412px;
+      }
+      .space-agent-description {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 37.01%;
+        padding-top: 291px;
+      }
+      .space-agent-description-container {
+        box-sizing: border-box;
+        max-width: 447px;
+        padding: 496px 18.5px 71px 120px;
+        background: url("assets/image_b01f4704.png") 50% / cover no-repeat;
+      }
+      .data-fusion-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 24px 23.5px 24px 23px;
+        background: #f5f2fb;
+        border-radius: 24px;
+        backdrop-filter: blur(53px);
+      }
+      .data-integration-block {
+        flex: 0 0 auto;
+      }
+      .purple-heading2 {
+        padding: 0;
+        margin: 0;
+        font: 500 24px/26px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.72px;
+      }
+      .unified-data-processor {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 8px;
+        font: 400 16px/22px Manrope, sans-serif;
+        color: #10041b;
+        text-align: left;
+        letter-spacing: -0.48px;
+      }
+      .flex-row-with-gap {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 32px;
+      }
+      .alternative-text-container {
+        flex: 0 0 auto;
+        padding-top: 16px;
+      }
+      .purple-heading3 {
+        padding: 0;
+        margin: 0;
+        font: 600 12px Manrope, sans-serif;
+        color: #946ad2;
+      }
+      .purple-heading4 {
+        padding: 0;
+        margin: 0;
+        margin-top: 2px;
+        font: 600 14px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.42px;
+      }
+      .alternative-box {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+        padding-right: 16px;
+        padding-left: 16px;
+        background: #fbfafd;
+        border-radius: 100px;
+      }
+      .main-content-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 34.44%;
+        padding: 388px 15px 613px;
+      }
+      .purple-pillar {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 56px;
+        height: 5px;
+        background: #946ad2;
+        border-radius: 100px;
+      }
+      .inner-content-wrapper {
+        flex: 0 0 auto;
+        padding-right: 39px;
+        padding-left: 72px;
+        margin-top: -5px;
+      }
+      .circular-bar {
+        box-sizing: border-box;
+        width: 56px;
+        height: 5px;
+        background: #f7f7f8;
+        border-radius: 100px;
+      }
+      .circular-progress-bar {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        align-self: center;
+        width: 56px;
+        height: 5px;
+        margin-top: -5px;
+        margin-left: -122px;
+        background: #f7f7f8;
+        border-radius: 100px;
+      }
+      .circular-progress-bar1 {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        align-self: center;
+        width: 56px;
+        height: 5px;
+        margin-top: -5px;
+        margin-left: 22px;
+        background: #f7f7f8;
+        border-radius: 100px;
+      }
+      .horizontal-layout-container {
+        flex: 0 0 auto;
+        padding-right: 39px;
+        padding-left: 288px;
+        margin-top: -5px;
+      }
+      .purple-rounded-button {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        align-self: center;
+        width: 201px;
+        min-width: 201px;
+        height: 56px;
+        margin-top: 32px;
+        margin-left: -122px;
+        font: 600 16px Manrope, sans-serif;
+        color: white;
+        letter-spacing: -0.48px;
+        cursor: pointer;
+        background: #946ad2;
+        border: none;
+        border-radius: 100px;
+      }
+      .column-layout-with-svg-footer {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        width: 28.54%;
+        padding-bottom: 770px;
+        padding-left: 15px;
+      }
+      .rounded-container-with-svg {
+        box-sizing: border-box;
+        width: 100%;
+        background: #f7f7f8;
+        border-radius: 24px;
+      }
+      .centered-column-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 100%;
+        padding: 150px 24px;
+        background: url("assets/image_821f352b.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .proprietary-technologies-section {
+        flex: 0 0 auto;
+        align-self: center;
+        margin-top: -413px;
+      }
+      .space-technology-container {
+        position: relative;
+        box-sizing: border-box;
+        width: 764px;
+        height: 342px;
+      }
+      .space-tech-title {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        font: 500 48px/50px Manrope, sans-serif;
+        color: #10041b;
+        letter-spacing: -1.44px;
+      }
+      .purple-button1 {
+        position: absolute;
+        top: 106px;
+        left: 123px;
+        box-sizing: border-box;
+        display: block;
+        width: 139px;
+        min-width: 139px;
+        height: 68px;
+        font: 500 18px/20px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.54px;
+        cursor: pointer;
+        background: #f9f6fd;
+        border: none;
+        border-radius: 16px;
+        backdrop-filter: blur(53px);
+      }
+      .space-client-button {
+        position: absolute;
+        top: 106px;
+        left: 278px;
+        box-sizing: border-box;
+        display: block;
+        width: 240px;
+        min-width: 240px;
+        height: 68px;
+        font: 500 18px/20px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.54px;
+        cursor: pointer;
+        background: #f9f6fd;
+        border: none;
+        border-radius: 16px;
+        backdrop-filter: blur(53px);
+      }
+      .space-controller-button1 {
+        position: absolute;
+        top: 106px;
+        left: 534px;
+        box-sizing: border-box;
+        display: block;
+        width: 192px;
+        min-width: 192px;
+        height: 68px;
+        font: 500 18px/20px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.54px;
+        cursor: pointer;
+        background: #f9f6fd;
+        border: none;
+        border-radius: 16px;
+        backdrop-filter: blur(53px);
+      }
+      .space-dispatcher-button {
+        position: absolute;
+        top: 190px;
+        left: 123px;
+        box-sizing: border-box;
+        display: block;
+        width: 203px;
+        min-width: 203px;
+        height: 68px;
+        font: 500 18px/20px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.54px;
+        cursor: pointer;
+        background: #f9f6fd;
+        border: none;
+        border-radius: 16px;
+        backdrop-filter: blur(53px);
+      }
+      .space-protocol-button {
+        position: absolute;
+        top: 190px;
+        left: 342px;
+        box-sizing: border-box;
+        display: block;
+        width: 203px;
+        min-width: 203px;
+        height: 68px;
+        font: 500 18px/20px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.54px;
+        cursor: pointer;
+        background: #f9f6fd;
+        border: none;
+        border-radius: 16px;
+        backdrop-filter: blur(53px);
+      }
+      .space-agent-button {
+        position: absolute;
+        top: 190px;
+        left: 561px;
+        box-sizing: border-box;
+        display: block;
+        width: 203px;
+        min-width: 203px;
+        height: 68px;
+        font: 500 18px/20px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.54px;
+        cursor: pointer;
+        background: #f9f6fd;
+        border: none;
+        border-radius: 16px;
+        backdrop-filter: blur(53px);
+      }
+      .space-balancer-button {
+        position: absolute;
+        top: 274px;
+        left: 123px;
+        box-sizing: border-box;
+        display: block;
+        width: 276px;
+        min-width: 276px;
+        height: 68px;
+        font: 500 18px/20px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.54px;
+        cursor: pointer;
+        background: #f9f6fd;
+        border: none;
+        border-radius: 16px;
+        backdrop-filter: blur(53px);
+      }
+      .space-controller-button {
+        position: absolute;
+        top: 274px;
+        left: 415px;
+        box-sizing: border-box;
+        display: block;
+        width: 276px;
+        min-width: 276px;
+        height: 68px;
+        font: 500 18px/20px Manrope, sans-serif;
+        color: #946ad2;
+        letter-spacing: -0.54px;
+        cursor: pointer;
+        background: #f9f6fd;
+        border: none;
+        border-radius: 16px;
+        backdrop-filter: blur(53px);
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1440px; height: 3982px; background: white" data-ignore="used only for top most containter width">
+      <div class="spacevm-landing-page-layout">
+        <div class="vertical-centered-container">
+          <div class="main-content-container">
+            <div class="flex-row-with-spacing">
+              <img src="assets/image_171aa510.png" class="contact-info-section2" />
+              <div class="contact-info-section">
+                <img src="assets/image_402ff5f3.png" class="contact-info-section1" />
+                <p class="contact-info-card">info@spacevm.org</p>
+                <p class="contact-info-card">+7(812)470-60-00</p>
+              </div>
+            </div>
+            <div class="flex-column-with-spacing">
+              <div class="hierarchical-text-block">
+                <div class="vertical-center-box">
+                  <p class="heading-link">Продукты</p>
+                </div>
+              </div>
+              <div class="hierarchical-text-block">
+                <div class="partner-section-container">
+                  <p class="heading-link">Партнёры</p>
+                </div>
+              </div>
+              <div class="hierarchical-text-block">
+                <div class="support-section">
+                  <p class="heading-link">Поддержка</p>
+                </div>
+              </div>
+              <div class="card-with-title">
+                <div class="vertical-center-box1">
+                  <p class="heading-link">Space connect</p>
+                </div>
+              </div>
+              <div class="training-card">
+                <div class="vertical-center-box1">
+                  <p class="heading-link">Обучение</p>
+                </div>
+                <!-- <div class="learning-section">
+                  <img src="assets/image_930db4e9.png" class="image-container-styles" />
+                </div> -->
+              </div>
+              <div class="card-with-title">
+                <div class="vertical-center-box1">
+                  <p class="heading-link">Пресс-центр</p>
+                </div>
+              </div>
+              <div class="hierarchical-text-block">
+                <div class="vertical-center-box">
+                  <p class="heading-link">Компания</p>
+                </div>
+              </div>
+              <div class="hierarchical-text-block">
+                <div class="career-section-container">
+                  <p class="heading-link">Карьера</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eco-virtual-space-hierarchy">
+          <div class="futuristic-container">
+            <div class="virtualization-ecosystem-container">
+              <div class="virtualization-ecosystem-style">
+                <p class="eco-virtual-space-heading">
+                  <span>Экосистема<br />виртуализации </span><span class="vibrant-heading">Space</span>
+                </p>
+                <p class="cloud-tech-description-style">Российская виртуализация<br />на основе проприетарных облачных технологий</p>
+              </div>
+              <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+              <div class="virtualization-platform-list">
+                <div class="hierarchical-text-container">
+                  <img src="assets/image_1ff79f39.jpeg" class="image-with-text-overlay" />
+                  <p class="virtualization-platforms-listing">
+                    <span class="purple-heading">Топ-3</span><span> платформ<br />виртуализации 2024</span>
+                  </p>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="hierarchical-text-container">
+                  <img src="assets/image_1ff79f39.jpeg" class="image-with-text-overlay" />
+                  <p class="virtualization-platforms-listing">
+                    <span class="purple-heading">Топ-3</span><span> платформ<br />виртуализации 2024</span>
+                  </p>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="hierarchical-text-container">
+                  <img src="assets/image_1ff79f39.jpeg" class="image-with-text-overlay" />
+                  <p class="virtualization-platforms-listing">
+                    <span class="purple-heading">Топ-3</span><span> платформ<br />виртуализации 2024</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img src="assets/image_e4ec0d0d.png" class="immersive-image-container" />
+          </div>
+          <div class="vertical-centered-container">
+            <div class="enterprise-solutions-container">
+              <div class="enterprise-solutions-section">
+                <p class="enterprise-solution-heading">Экосистема серверной виртуализации&nbsp; для&nbsp; IT-задач уровня Enterprise</p>
+                <p class="enterprise-solution-heading1">Линейка решений для организации виртуальной инфраструктуры</p>
+              </div>
+              <div class="enterprise-solutions-section1">
+                <div class="blue-box-container">
+                  <div class="virtual-infra-management-section">
+                    <p class="virtual-infrastructure-heading-style">Эффективное управление виртуальной ИТ-инфраструктурой</p>
+                    <p class="virtual-infrastructure-title">SpaceVM</p>
+                  </div>
+                </div>
+                <div class="virtual-desktop-infrastructure-style">
+                  <div class="virtualization-ecosystem-style">
+                    <div class="virtual-desktop-infra-visual"></div>
+                    <div class="virtual-desktop-infrastructure-style1">
+                      <p class="virtual-desktop-infrastructure-heading">Инфраструктура виртуальных рабочих столов</p>
+                    </div>
+                  </div>
+                  <div class="virtual-desktop-info">
+                    <p class="space-vdi-title-style">Space VDI</p>
+                    <div class="space-vdi-badge"></div>
+                  </div>
+                </div>
+                <div class="orange-box-style">
+                  <div class="vertical-center-text-container">
+                    <p class="virtual-infrastructure-heading-style">Подключение <br />к инфраструктуре VDI</p>
+                    <p class="virtual-infrastructure-title">Space Client</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-container1">
+            <div class="vertical-centered-container">
+              <div>
+                <p class="standout-heading">Преимущества Space</p>
+                <div class="central-flex-column-hierarchy">
+                  <div class="hierarchical-container">
+                    <div class="proprietary-styling">
+                      <p class="unique-heading-style">Проприетарность</p>
+                      <div class="proprietary-content-container">
+                        <div class="proprietary-product-info-container">
+                          <p class="proprietary-text-styling">Мы не опираемся на open source решения, <br />а используем проприетарные разработки в продуктах для серверной виртуализации и VDI&nbsp;</p>
+                          <img src="assets/image_840f041a.png" class="unique-content-image" />
+                        </div>
+                        <div class="proprietary-content-block1">
+                          <img src="assets/image_840f041a.png" class="darkened-image-container" />
+                        </div>
+                        <div class="proprietary-content-block">
+                          <img src="assets/image_7d888d67.png" class="image-container" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="seamless-ecosystem-container">
+                      <div class="seamless-eco-system-container">
+                        <p class="eco-system-title">Экосистемность</p>
+                        <p class="seamless-eco-system-text-style">Целая экосистема решений для бесшовного взаимодействия и максимальной эффективности</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-container-with-customization">
+                    <div class="national-security-product-card">
+                      <div class="national-security-banner"></div>
+                      <div class="national-security-products">
+                        <div class="virtualization-container">
+                          <p class="virtualization-heading">Российская<br />виртуализация</p>
+                        </div>
+                        <div class="product-info-container">
+                          <p class="space-product-description-text-style">Продукты линейки Space соответствуют<br />национальным стандартам <br />и требованиям безопасности</p>
+                          <img src="assets/image_180407e1.png" class="space-product-image-styles" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="customizer-container">
+                      <div class="header-background-section"></div>
+                      <div class="customizer-section">
+                        <p class="custom-heading-style">Кастомизация</p>
+                        <div class="customer-engagement-roadmap">
+                          <div class="virtualization-container">
+                            <p class="customer-interaction-text">Наша команда&nbsp; находится в тесном контакте с заказчиками и формирует дорожную карту исходя из их запросов</p>
+                          </div>
+                          <div class="customer-engagement-section">
+                            <div class="card-thumbnail-container"></div>
+                            <div class="image-container2">
+                              <img src="assets/image_28555523.jpeg" class="cover-image-display-style" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-agency-layout">
+              <div class="scientific-research-center-container">
+                <p class="scientific-text-block">
+                  <span class="purple-heading-style">Space — </span><span>R&amp;D центр с командой из научных сотрудников и опытом работы&nbsp; <br />с ведущими российскими компаниями</span>
+                </p>
+                <div class="scientific-team-section">
+                  <div class="hero-section-container">
+                    <div class="card-container">
+                      <div class="vertical-center-align-with-padding">
+                        <div class="svg-container">
+                          <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Button_2" data-node-id="1:2203" xmlns="http://www.w3.org/2000/svg">
+                              <g id="chevron-left" data-node-id="I1:2203;156:1636">
+                                <path id="Icon" data-node-id="I1:2203;156:1636;25:8776" d="M15,18l-6,-6l6,-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <img src="assets/image_267a1c9e.jpeg" class="image-container-with-border-radius" />
+                  </div>
+                  <div class="vertical-align-bottom-flex-container">
+                    <img src="assets/image_e552a8bb.png" class="image-container1" />
+                  </div>
+                </div>
+              </div>
+              <div class="flex-container-with-buttons">
+                <div class="space-agent-description">
+                  <div class="space-agent-description-container">
+                    <div class="data-fusion-container">
+                      <div class="data-integration-block">
+                        <p class="purple-heading2">Space Agent PC (VDA)</p>
+                        <p class="unified-data-processor">Объединяет несколько типов оборудования для одновременной работы с данными</p>
+                      </div>
+                      <div class="flex-row-with-gap">
+                        <div class="alternative-text-container">
+                          <p class="purple-heading3">Альтернатива</p>
+                          <p class="purple-heading4">VMware Horizon Agent</p>
+                        </div>
+                        <div class="alternative-box">
+                          <div class="svg-container">
+                            <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g id="arrow-up-right" data-node-id="I1:2220;599:6290;156:1651" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon_3" data-node-id="I1:2220;599:6290;156:1651;25:8525" d="M7,17l10,-10M17,7h-10M17,7v10" stroke="#946AD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-content-section">
+                  <div class="scientific-research-center-container">
+                    <div class="purple-pillar"></div>
+                    <div class="inner-content-wrapper">
+                      <div class="circular-bar"></div>
+                    </div>
+                    <div class="circular-progress-bar"></div>
+                    <div class="circular-progress-bar1"></div>
+                    <div class="horizontal-layout-container">
+                      <div class="circular-bar"></div>
+                    </div>
+                  </div>
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                </div>
+                <div class="column-layout-with-svg-footer">
+                  <div class="rounded-container-with-svg">
+                    <div class="centered-column-container">
+                      <div class="svg-container">
+                        <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Button_3" data-node-id="1:2208" xmlns="http://www.w3.org/2000/svg">
+                            <g id="chevron-right" data-node-id="I1:2208;156:1636">
+                              <path id="Icon_2" data-node-id="I1:2208;156:1636;25:8770" d="M9,18l6,-6l-6,-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="proprietary-technologies-section">
+                <div class="space-technology-container">
+                  <p class="space-tech-title">Проприетарные технологии Space</p>
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                  <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
