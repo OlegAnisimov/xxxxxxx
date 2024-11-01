@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700" />
+
+  <style>
+    /* about services */
+    .row {
+      max-width: 1200px;
+    }
+
+    .services-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .services-image {
+      max-width: 441px;
+      max-height: 413px;
+    }
+
+    .services-feature-icon {
+      max-width: 24px;
+      max-height: 24px;
+    }
+
+    .services-features-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .services-feature-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @media screen and (max-width: 576px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .services-about-container {
+        order: 1;
+      }
+
+      .services-image {
+        order: 0;
+        width: auto;
+        height: auto;
+      }
+    }
+
+    /* centers */
+
+    .service-centers-container {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      margin-top: 200px;
+      max-height: 296px;
+    }
+
+    .center-logo-dakom {
+      width: 74px;
+      height: 58px;
+    }
+
+    .center-logo-bcc {
+      width: 147px;
+      height: 41px;
+    }
+
+    .center-logo-cortel {
+      width: 161px;
+      height: 41px;
+    }
+
+    .center-logo-comptek {
+      width: 165px;
+      height: 29px;
+    }
+
+    .center__icon {
+      max-width: 24px;
+      max-height: 24px;
+    }
+
+    .bugzilla {
+      border: 1px red solid;
+      height: 282px;
+    }
+
+
+    #cone {
+      width: 0;
+      height: 0;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-top: 100px solid red;
+      border-radius: 50%;
+    }
+
+    /* HTML: <div class="sector"></div> */
+    .bugzilla {
+      display: flex;
+      flex-direction: row;
+      background-color: #946AD2;
+    }
+
+    .sector {
+      --s: 0deg;
+      /* starting angle */
+      --p: 180deg;
+      /* filling angle */
+
+      height: 282px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      /* background: #851560; */
+      background: radial-gradient(50% 50% at 50% 50%, #946AD2 0%, #946AD2 92.14%, #A681DD 100%);
+
+      /* switch #0000 and #000 to get the opposite shape */
+      mask: conic-gradient(from var(--s), #0000, #000 1deg var(--p), #0000 calc(var(--p) + 1deg));
+    }
+
+    .clippath {
+      /* background: linear-gradient(to bottom right, #f52, #05f); */
+      background: radial-gradient(50% 50% at 50% 50%, #946AD2 0%, #946AD2 92.14%, #A681DD 100%);
+      width: 100%;
+      height: 100%;
+    }
+
+    #clipath-first {
+      clip-path: circle(14rem at right center);
+    }
+    
+    #clipath-second {
+      clip-path: circle(14rem at right center);
+    }
+    
+    #clipath-third {
+      clip-path: circle(14rem at right center);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row services-container">
+      <div class="services-about-container col col-xl-8 col-lg-8 col-md-8 col-1">
+        <h1 class="services-about-heading">Сервисные центры</h1>
+
+        <p class="services-about-description">
+          Все продукты экосистемы виртуализации Space поставляются совместно<br />с сертификатами сервисной поддержки.
+        </p>
+
+        <div class="services-features-container">
+          <div class="services-feature-container">
+            <div class="services-feature-icon-container">
+              <img src="assets/image/plug.png" class="services-feature-icon">
+            </div>
+
+            <div class="services-feature">
+              <div class="services-feature-title">
+                <span>Сервисная поддержка и сертификаты</span>
+              </div>
+
+              <div class="services-feature-description">
+                <p>Для услуг по сервисной поддержке и вопросам пролонгации сертификатов обращайтесь в Авторизованный
+                  Центр Технической Поддержки (ООО «ДАКОМ М»).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-feature-container">
+            <div class="services-feature-icon-container">
+              <img src="assets/image/plug.png" class="services-feature-icon">
+            </div>
+
+            <div class="services-feature">
+              <div class="services-feature-title">
+                <span>Профессиональное обслуживание</span>
+              </div>
+
+              <div class="services-feature-description">
+                <p>Наши специалисты обеспечивают высококачественное обслуживание, включая установку, настройку и выбор
+                  оптимального сервисного пакета.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="services-image-container col col-xl-4 col-lg-4 col-md-4 col-1">
+        <img class="services-image" src="assets/image/suuport_image.png" />
+      </div>
+    </div>
+
+
+    <div class="row service-centers-container">
+      <div class="center">
+        <img src="assets/image/logo_dakom_service.png" alt="Даком" class="center__logo center-logo-dakom">
+
+        <div class="phone-container">
+          <img src="assets/image/plug.png" class="center__phone-icon center__icon">
+          <span class="center__phone-number">+7(800) 550-66 41</span>
+        </div>
+
+        <div class="email-container">
+          <img src="assets/image/plug.png" class="center__email-icon center__icon">
+          <span class="center__email-address">service@spacevm.org</span>
+        </div>
+
+        <div class="pdf-container">
+          <img src="assets/image/plug.png" class="center__pdf-icon center__icon">
+          <a class="center__pdf">Инструкция по активации сертификата поддержки.pdf</a>
+        </div>
+      </div>
+
+      <div class="center">
+        <img src="assets/image/BCC_MSK_LOGO_RGB 1.png" alt="Даком" class="center__logo center-logo-bcc">
+
+        <div class="phone-container">
+          <img src="assets/image/plug.png" class="center__phone-icon center__icon">
+          <span class="center__phone-number">+7(800) 550-66 41</span>
+        </div>
+
+        <div class="email-container">
+          <img src="assets/image/plug.png" class="center__email-icon center__icon">
+          <span class="center__email-address">service@spacevm.org</span>
+        </div>
+
+        <div class="pdf-container">
+          <img src="assets/image/plug.png" class="center__pdf-icon center__icon">
+          <a class="center__pdf">Инструкция по активации сертификата поддержки.pdf</a>
+        </div>
+      </div>
+
+      <div class="center">
+        <img src="assets/image/CORTEL_LOGO.png" alt="Даком" class="center__logo center-logo-cortel">
+
+        <div class="phone-container">
+          <img src="assets/image/plug.png" class="center__phone-icon center__icon">
+          <span class="center__phone-number">+7(800) 550-66 41</span>
+        </div>
+
+        <div class="email-container">
+          <img src="assets/image/plug.png" class="center__email-icon center__icon">
+          <span class="center__email-address">service@spacevm.org</span>
+        </div>
+
+        <div class="pdf-container">
+          <img src="assets/image/plug.png" class="center__pdf-icon center__icon">
+          <a class="center__pdf">Инструкция по активации сертификата поддержки.pdf</a>
+        </div>
+      </div>
+
+      <div class="center">
+        <img src="assets/image/comptek_5 2.png" alt="Даком" class="center__logo center-logo-comptek">
+
+        <div class="phone-container">
+          <img src="assets/image/plug.png" class="center__phone-icon center__icon">
+          <span class="center__phone-number">+7(800) 550-66 41</span>
+        </div>
+
+        <div class="email-container">
+          <img src="assets/image/plug.png" class="center__email-icon center__icon">
+          <span class="center__email-address">service@spacevm.org</span>
+        </div>
+
+        <div class="pdf-container">
+          <img src="assets/image/plug.png" class="center__pdf-icon center__icon">
+          <a class="center__pdf">Инструкция по активации сертификата поддержки.pdf</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row bugzilla">
+      <!-- <div id="cone"></div> -->
+      <!-- <div class="sector"></div>
+       <div class="sector"></div>
+       <div class="sector"></div> -->
+
+      <div class="clippath" id="clipath-first"></div>
+      <div class="clippath" id="clipath-second"></div>
+      <div class="clippath" id="clipath-third"></div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
